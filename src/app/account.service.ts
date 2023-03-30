@@ -18,7 +18,7 @@ export class AccountService {
     this.accounts.push({ name: name, status: status });
   }
 
-  updateStatus(id: string, status: string) {
+  updateStatus(id: number, status: string) {
     this.accounts[id].status = status;
   }
 }
